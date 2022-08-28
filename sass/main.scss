@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f7f5f3 !important;
+}
+.navbar {
+  .navbar-brand {
+    color: #f9693f;
+    font-size: 50px;
+    font-weight: bold;
+  }
+  .navbar-nav {
+    .nav-item {
+      padding: 10px;
+      .auht-btn {
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+          rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+        text-decoration: none;
+        font-weight: 500;
+        padding: 6px 10px;
+        border: 2px solid #f9693f;
+        border-radius: 10px 50px 50px 50px;
+        color: white;
+        display: block;
+        background-color: #f9693f;
+        &:hover {
+          border: 2px solid #ffffff;
+          transition: 0.2s;
+          color: #ffffff;
+          background-color: #ff7b00;
+        }
+      }
+      .nav-link {
+        font-weight: 500;
+        padding: 10px 10px;
+        &:after {
+          top: 2px;
+          content: "";
+          display: block;
+          height: 2px;
+          left: 0%;
+          position: relative;
+          background: #f9693f;
+          transition: width 0.2s ease 0s, left 0.1s ease 0s;
+          width: 0;
+        }
+        &:hover:after {
+          width: 100%;
+          left: 0;
+        }
+        &:hover {
+          transition: 0.2s;
+          color: #f9693f;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .auht-btn {
+      width: 100px;
+    }
+  }
+}
+.top_cont {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  h1,
+  h4 {
+    font-family: "Lobster", cursive;
+    margin-top: 30px;
+  }
+  h1 {
+    font-size: 50px;
+    span {
+      color: #f9693f;
+    }
+  }
+  img {
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  }
+  .div-btn {
+    margin-top: 50px;
+    width: 100%;
+  }
+  .get-started {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+      rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 20px 40px;
+    border: 2px solid #f9693f;
+    border-radius: 10px 50px 50px 50px;
+    color: white;
+    background-color: #f9693f;
+    &:hover {
+      border: 2px solid #ffffff;
+      transition: 0.2s;
+      color: #ffffff;
+      background-color: #ff7b00;
+    }
+  }
+  .ordr-btn {
+    border-radius: 10px 50px 50px 50px;
+    color: #f9693f;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+      rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    margin-left: 40px;
+    span {
+      width: 100%;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    text-decoration: none;
+    .bi-play-circle-fill {
+      font-size: 40px;
+      margin-right: 10px;
+    }
+  }
+}
+
+.md_section {
+  img {
+    &:hover {
+      transform: scale(1.1);
+      transition: 0.3s;
+    }
+  }
+  margin-top: 100px;
+  .row {
+    margin-top: 100px;
+    h1 {
+      font-family: "Lobster", cursive;
+    }
+  }
+  .trending_row {
+    background-color: #fbfaf9;
+    border-radius: 20px;
+    padding: 10px;
+    h1 {
+      font-family: "Lobster", cursive;
+    }
+    h4 {
+      color: #f9693f;
+    }
+    .trending_col {
+      padding: 20px;
+      width: 90%;
+      overflow: hidden;
+      .trending_col_div {
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+          rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+        padding: 20px;
+        height: auto;
+        background-color: white;
+        margin: 10px;
+        margin-top: 100px;
+        border-radius: 50px 10px 50px 10px;
+        width: 100%;
+        img {
+          position: relative;
+          width: 100px;
+          // left: 75%;
+          // bottom: 20%;
+        }
+        h4 {
+          color: #f9693f;
+        }
+        h6 {
+          margin: 10px;
+          margin-bottom: 30px;
+        }
+
+        a {
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+            rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+          text-decoration: none;
+          font-weight: 500;
+          padding: 10px 40px;
+          border: 2px solid #f9693f;
+          border-radius: 10px 50px 50px 50px;
+          margin: 10px;
+          margin-top: 10px;
+          color: white;
+          background-color: #f9693f;
+          &:hover {
+            border: 2px solid #ffffff;
+            transition: 0.2s;
+            color: #ffffff;
+            background-color: #ff7b00;
+          }
+        }
+      }
+    }
+  }
+  .btn_contorl {
+    background-color: transparent;
+    img {
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+        rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+      text-decoration: none;
+      font-weight: 500;
+      color: white;
+      border-radius: 100%;
+      &:hover {
+        transition: 0.2s;
+        color: #ffffff;
+      }
+    }
+  }
+
+  .top_collections {
+    .col {
+      margin: 10px;
+      img {
+        width: 300px;
+        height: 500px;
+        border-radius: 20px;
+        &:hover {
+          transform: scale(1.1);
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+  .our_chefs {
+    background-color: #fbfaf9;
+    border-radius: 20px;
+    padding: 10px;
+    h1 {
+      margin-top: 50px;
+    }
+    .col {
+      margin: 10px;
+      text-align: center;
+      h5 {
+        margin: 10px;
+      }
+      img {
+        width: 300px;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+          rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+      }
+    }
+  }
+  .newest_recipes {
+    h4 {
+      color: #f9693f;
+    }
+    .col {
+      margin: 10px;
+      background-color: white;
+      border-radius: 20px;
+      img {
+        width: 200px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+          rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+        border-radius: 100px;
+      }
+      h5 {
+        text-align: center;
+        margin-top: 40px;
+      }
+    }
+  }
+}
+
+footer {
+  background-color: white;
+  margin-top: 60px;
+  color: black;
+  a {
+    color: black;
+    text-decoration: none;
+  }
+}
